@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #050510;
+  color: #00f7ff;
+  text-align: center;
+}
+
+.container {
+  padding: 20px;
+}
+
+h1 {
+  font-size: 40px;
+  text-shadow: 0 0 20px #00f7ff;
+}
+
+.glow {
+  color: #ff00ff;
+  text-shadow: 0 0 10px #ff00ff;
+}
+
+button {
+  background: transparent;
+  border: 1px solid #00f7ff;
+  color: #00f7ff;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+input {
+  padding: 10px;
+  background: black;
+  border: 1px solid #00f7ff;
+  color: #00f7ff;
+}
+
+.hidden {
+  display: none;
+}
+
+.time {
+  font-size: 30px;
+  margin: 20px;
+}
