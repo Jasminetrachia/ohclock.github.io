@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Oh Clock</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Welcome -->
+    <section id="welcome">
+      <h1>OH CLOCK</h1>
+      <p class="glow">Time bends for no one. Stay ahead of it.</p>
+      <button onclick="enterApp()">Enter</button>
+    </section>
+
+    <!-- Home -->
+    <section id="home" class="hidden">
+      <h2>Your Local Time</h2>
+      <div id="timeDisplay" class="time"></div>
+
+      <input id="countryInput" placeholder="Search country or timezone..." />
+      <button onclick="searchTime()">Check Time</button>
+      <div id="result"></div>
+
+      <nav>
+        <button onclick="showTab('timer')">Timer</button>
+        <button onclick="showTab('stopwatch')">Stopwatch</button>
+      </nav>
+    </section>
+
+    <!-- Timer -->
+    <section id="timer" class="hidden">
+      <h2>Timer</h2>
+      <input id="timerInput" placeholder="Seconds" />
+      <button onclick="startTimer()">Start</button>
+      <div id="timerDisplay"></div>
+    </section>
+
+    <!-- Stopwatch -->
+    <section id="stopwatch" class="hidden">
+      <h2>Stopwatch</h2>
+      <button onclick="startStopwatch()">Start</button>
+      <button onclick="stopStopwatch()">Stop</button>
+      <div id="stopwatchDisplay">0</div>
+    </section>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
